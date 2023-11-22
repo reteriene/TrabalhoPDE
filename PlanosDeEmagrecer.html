@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosPDE.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Planos De Emagrecer</title>
+</head>
+<body>
+    <body>
+
+      <div class="container justify-content-center">
+      
+        <nav class="navbar">
+          <div class="container-fluid p-0">
+            <img class="m-0" src="https://icones.pro/wp-content/uploads/2021/03/icone-medicale-symbole-png-bleu.png" height="50vh" width="50vh" alt="logo">
+            <span class="navbar-brand m-0"><h1 style="font-size: 25px;">Calculadora de Custo-Benefício de Planos de Saúde</h1></span>
+          </div>
+        </nav>
+        
+        <h1 style="text-align: center;">Calcule o seu IMC e descubra o melhor plano pra você!</h1>
+      <div class="row justify-content-center ">
+        
+      <div class="col-md-6 ">
+        <div class="card">
+          <div class="card-body">
+            <form id="healthForm">
+              <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" class="form-control" id="idade" required>
+              </div>
+              <div class="form-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" class="form-control" id="peso" required>
+              </div>
+              <div class="form-group">
+                <label for="altura">Altura (cm):</label>
+                <input type="number" class="form-control" id="altura" required>
+              </div>
+              <button type="button" class="btn btn-primary btn-block" onclick="calculate()">Calcular</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div id="result" class="card" style="display: none;">
+          <div class="card-body">
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div id="bestPlan" class="card" style="display: none;">
+          <div class="card-body">
+            <h5 class="card-title">Melhor Plano Recomendado</h5>
+            <p id="bestPlanText"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+          <br>
+            <h5 class="card-title ">Planos disponíveis!</h5>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Plano</th>
+                  <th scope="col">Unimed</th>
+                  <th scope="col">Pague Menos</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Básico</th>
+                  <td id="planA-basic"></td>
+                  <td id="planB-basic"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Standard</th>
+                  <td id="planA-standard"></td>
+                  <td id="planB-standard"></td>
+                </tr>
+                <tr>
+                  <th scope="row">Premium</th>
+                  <td id="planA-premium"></td>
+                  <td id="planB-premium"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="container justify-content-center">
+    
+      
+      
+            
+          
+      <!--- BootStraps/Scripts -->
+      <script src="scriptPDE.js"> </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

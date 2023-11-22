@@ -1,0 +1,34 @@
+body {
+    background-image: url(FundoPDE.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+  .card {
+    margin-top: 20px;
+    border: 2px solid #005489;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-primary {
+    background-color: #005489;
+    border-color: #005489;
+  }
+
+  .btn-primary:hover {
+    background-color: #003366;
+    border-color: #003366;
+  }
+
+  .table {
+    background-color: #fff;
+  }
+
+  h1, h5 {
+    color: #005489;
+  }
+  
